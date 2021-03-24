@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pablo's Library</title>
+</head>
+<body>
+    <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class='main-heading'> Pablo's Library</div>
+        <button class="open-btn" onclick="togglePopup()">Add Book</button>
+
+        <div class="display-books">
+        </div>
+
+        <div class="book-info">
+            <div class="book-popup">
+                <form method="submit" id="add-book">
+                    <h1 class="heading">New Book</h1>
+        
+                    <label for="bookname">Book Name *</label>
+                    <input type="text" name="bookname" required>
+        
+                    <label for="author">Author *</label>
+                    <input type="text" name="author" required>
+        
+                    <label for="bookpages">Number of Pages *</label>
+                    <input type="number" name="bookpages" required>
+        
+                    <label for="status">Read/Ongoing</label>
+                    <select id="status" name="status">
+                        <option value="Read">Read</option>
+                        <option value="Ongoing">Ongoing</option>
+                    </select>
+                    <br />
+                    <br />
+                    <button class="add-book-btn" type="submit">Add Book</button>
+                </form>
+                <br />
+                <button class="close-popup" onclick="togglePopup()">&times;</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
